@@ -1,0 +1,70 @@
+* Entirely client side applications with shared state!
+
+* Motivation
+
+* Motivation
+** I wanted to play games with others.
+
+* Technology
+
+* Technology
+** ClojureScript
+   - Reagent
+   - lein-figwheel
+** Firebase
+
+* Reagent
+  - https://reagent-project.github.io/
+  - A minimal React interface.
+  - A lot like just using Hiccup + atoms
+
+* lein-figwheel
+  - https://github.com/bhauman/lein-figwheel
+  - Builds cljs code and hot loads into your browser.
+  - Live reloads your css as well.
+  - Extremely quick feedback cycles.
+
+* Firebase: https://www.firebase.com/
+   - "A powerful API to store and
+     sync data in real time."
+   - a NoSQL database hosted in the cloud.
+   - Persistent connection between
+     client and server.
+   - Can host the html/javascript/css
+     entirely using Firebase.
+
+* Firebase: https://www.firebase.com/pricing.html
+  - Free level is enough to at
+    least get started with the service.
+  - 50 concurrent connections, 5 GB transfer,
+    100 MB storage
+
+* Firebase: Data
+  - You are manipulating a JSON object.
+  - https://minimal-chat.firebaseio.com/#1
+
+* Firebase: Saving Data
+  | Operation   | result                 |
+  |-------------+------------------------|
+  | set         | write to specific path |
+  | update      | Update some keys       |
+  | push        | Add to a list of data  |
+  | transaction | sort of like swap!     |
+
+* Firebase: Retrieving Data
+  - Subscribe to events
+    - child_changed
+    - child_added
+    - child_removed
+    - child_moved
+    - value
+  - Can also just get data once.
+
+* Matchbox: https://github.com/crisptrutski/matchbox
+  - cljs library that exposes some of the functionality.
+  - I use a minimal amount of it.
+
+* Other things mentioned
+  - https://pusher.com/
+  - http://jackboxgames.com/project/jbpp/
+  - https://redislabs.com/
