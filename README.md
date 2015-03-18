@@ -24,3 +24,8 @@ up [http://localhost:3449](http://localhost:3449)
 To run the ClojureScript tests run `lein auto-test`. It will recompile
 the ClojureScript and rerun the tests whenever a file changes.
 
+
+## Notes
+
+[This](talk.org) contains some presentation notes that were used to
+present this example.
