@@ -88,7 +88,7 @@
                                                           :optimizations :whitespace
                                                           :pretty-print true
                                                           :preamble ["react/react.js"]}}
-                                        :fuck {:source-paths ["src/cljs"  "test/cljs"]
+                                        :test2 {:source-paths ["src/cljs"  "test/cljs"]
                                                :notify-command ["phantomjs"
                                                                 :cljs.test/runner
                                                                 "test/vendor/es5-shim.js"
@@ -122,4 +122,4 @@
                           :cljsbuild {:builds {:app {:compiler {:main "minimal-chat.prod"}}}}}}
 
   :aliases {"auto-test" ["do" "clean"
-                         ["cljsbuild" "auto" "fuck"]]})
+                         ["cljsbuild" "auto" "test2"]]})
